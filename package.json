@@ -1,0 +1,14 @@
+{
+  "name": "com.small-package.small-fade-component",
+  "version": "0.0.1",
+  "displayName": "Small Fade Component",
+  "description": "A simple component of for fade images.",
+  "unity": "2022.3",
+  "keywords": [
+    "Fade"
+  ],
+  "author": {
+    "name": "Small Fade Component",
+    "url": "https://github.com/antonioivodev"
+  }
+}
