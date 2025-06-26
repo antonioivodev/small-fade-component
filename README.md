@@ -14,8 +14,10 @@ A simple and small component to make *fade-in* and *fade-out* with alpha channel
 
 After installing the package, follow these steps:
 
-1. Add the `SmallFadeImageComponent` to any GameObject in your scene.
+1. Add the `SmallFadeImageComponent` to any GameObject in your scene inside of Canvas*.
 2. You can then call `FadeIn()` to start the fade-in effect or `FadeOut()` to start the fade-out effect.
+
+> *At moment, dosn't work with SpriteRenderer.
 
 ### Example
 
@@ -28,11 +30,11 @@ public class ExampleUsage : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.I))
         {
-            SmallFadeImage.FadeIn();
+            fadeComponent.FadeIn();
         }
         if (Input.GetKeyDown(KeyCode.O))
         {
-            SmallFadeImage.FadeOut();
+            fadeComponent.FadeOut();
         }
     }
 }
