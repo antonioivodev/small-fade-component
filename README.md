@@ -12,8 +12,10 @@ A simple and small component to make *fade-in* and *fade-out* with alpha channel
 
 ## Usage
 
-- Call `FadeIn()` to start the fade-in effect.
-- Call `FadeOut()` to start the fade-out effect.
+After installing the package, follow these steps:
+
+1. Add the `SmallFadeImageComponent` to any GameObject in your scene.
+2. You can then call `FadeIn()` to start the fade-in effect or `FadeOut()` to start the fade-out effect.
 
 ### Example
 
@@ -22,18 +24,21 @@ public class ExampleUsage : MonoBehaviour
 {
     [SerializeField] private SmallFadeImageComponent fadeComponent;
 
-    private void Start()
+    private void Update()
     {
-        fadeComponent.FadeIn(); // Start with fade-in
-    }
-
-    public void OnButtonClick()
-    {
-        fadeComponent.FadeOut(); // Trigger fade-out on button click
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            SmallFadeImage.FadeIn();
+        }
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            SmallFadeImage.FadeOut();
+        }
     }
 }
-
+```
 
 <p align="center">
   <img src="demonstration.gif" alt="A demonstration of fade-in and fade-out effect in Unity.">
+  <p align="center">Result</p>
 </p>
